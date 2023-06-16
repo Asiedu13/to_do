@@ -6,15 +6,39 @@
 
 body {
   background-color: #a18aff;
+  color: #717082;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @mixin border($color) {
   border: 1px solid transparent;
+}
+
+#pink {
+  background-color: #fd99af;
+  color: #fd99af;
+}
+#blue {
+  background-color: #3fd4f4;
+  color: #3fd4f4;
+}
+
+#pink,
+#blue,
+#yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+#yellow {
+  background-color: #fac608;
+  color: #fac608;
+  /* margin-right: 40px; */
 }
 /* Profile */
 main {
@@ -28,12 +52,14 @@ main {
     height: inherit;
     @include border(brown);
     background: #fff;
+    padding: 1rem;
 
     &-user-profile {
       height: 150px;
       @include border(red);
       padding: 1rem;
       position: relative;
+      margin-bottom: 50px;
 
       &::after {
         content: "";
@@ -50,7 +76,6 @@ main {
         border-bottom: 2px solid #a18aff;
         right: 70%;
         bottom: 0;
-        
 
         #img {
           @include border(red);
@@ -72,6 +97,53 @@ main {
             color: #a18aff;
             font-size: 1.6rem;
             font-weight: 700;
+          }
+        }
+      }
+    }
+
+    /* Navigation buttons */
+    #nav-buttons {
+      @include border(blue);
+      font-weight: 900;
+
+      #main_list {
+        list-style: none;
+        padding: 0 1rem;
+        @include border(red);
+        cursor: pointer;
+
+        li {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 50px;
+          width: 250px;
+          @include border(blue);
+          margin: 10px 0;
+          cursor: pointer;
+          svg {
+            height: 30px;
+            width: 30px;
+            margin-right: 50px;
+            fill: #717082;
+          }
+          &:hover {
+            color: #ca8bfe;
+          }
+
+          &:hover svg {
+            fill: #ca8bfe;
+          }
+        }
+
+        ul {
+          list-style: none;
+          li {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            margin-right: 40px;
           }
         }
       }

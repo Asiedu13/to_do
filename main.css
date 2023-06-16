@@ -6,11 +6,37 @@
 
 body {
   background-color: #a18aff;
+  color: #717082;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+}
+
+#pink {
+  background-color: #fd99af;
+  color: #fd99af;
+}
+
+#blue {
+  background-color: #3fd4f4;
+  color: #3fd4f4;
+}
+
+#pink,
+#blue,
+#yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+#yellow {
+  background-color: #fac608;
+  color: #fac608;
+  /* margin-right: 40px; */
 }
 
 /* Profile */
@@ -25,12 +51,15 @@ main #features {
   height: inherit;
   border: 1px solid transparent;
   background: #fff;
+  padding: 1rem;
+  /* Navigation buttons */
 }
 main #features-user-profile {
   height: 150px;
   border: 1px solid transparent;
   padding: 1rem;
   position: relative;
+  margin-bottom: 50px;
 }
 main #features-user-profile::after {
   content: "";
@@ -67,6 +96,47 @@ main #features-user-profile div #user-descp p {
   color: #a18aff;
   font-size: 1.6rem;
   font-weight: 700;
+}
+main #features #nav-buttons {
+  border: 1px solid transparent;
+  font-weight: 900;
+}
+main #features #nav-buttons #main_list {
+  list-style: none;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+main #features #nav-buttons #main_list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  border: 1px solid transparent;
+  margin: 10px 0;
+  cursor: pointer;
+}
+main #features #nav-buttons #main_list li svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 50px;
+  fill: #717082;
+}
+main #features #nav-buttons #main_list li:hover {
+  color: #ca8bfe;
+}
+main #features #nav-buttons #main_list li:hover svg {
+  fill: #ca8bfe;
+}
+main #features #nav-buttons #main_list ul {
+  list-style: none;
+}
+main #features #nav-buttons #main_list ul li {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

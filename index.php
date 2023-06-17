@@ -57,10 +57,33 @@
             
         <!-- To do addition and display -->
         <section id="display">
+            <header>
+                <div>
 
+                    <h2>Today main focus</h2>
+                    <h1>Design team meeting</h1>
+                </div>
+                </header>
+            <!-- Task input -->
+            <section id='task_input'>
+                <div>
+                    <b id='pink'></b>
+                    <b id='blue'></b>
+                    <b id='yellow'></b>
+                    <input type='text' placeholder='what is your next task?' />
+
+                    <div id='input_icons'>
+                        <!-- Time -->
+
+                        <!-- Calendar icon-->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task display -->
         </section>
             
-        </main>
+    </main>
 
         
     </body>

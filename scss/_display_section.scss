@@ -1,0 +1,61 @@
+#display {
+    flex: 1;
+    width: 400px;
+    height: 100vh;
+    /* background: #fff; */
+    border: 3px solid #fff;
+    color: #fff;
+
+    header {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        @include border(white);
+
+        div {
+            margin: 0 100px;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    #task_input {
+        @include border(red);
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            background: #fff;
+            border-radius: 20px;
+            margin-left: 100px;
+            align-items: center;
+            padding: 0.2rem 2rem;
+            width: 800px;
+
+            input {
+                width: 500px;
+                height: 60px;
+                font-size: 1.2rem;
+                border: none;
+                outline: none;
+                color: #a18aff;
+                &::placeholder {
+                    color: #dbdbdb;
+                }
+                /* border: none; */
+            }
+        }
+    }
+}

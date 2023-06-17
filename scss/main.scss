@@ -46,6 +46,7 @@ main {
   height: 100vh;
   border: 10px solid #fff;
   border-radius: 12px;
+  display: flex;
 
   #features {
     width: 350px;
@@ -149,4 +150,7 @@ main {
       }
     }
   }
+  @import "display_section";
 }
+
+

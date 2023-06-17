@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a18aff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Profile */
+main {
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid #fff;
+  border-radius: 12px;
+}
+main #features {
+  width: 350px;
+  height: inherit;
+  border: 1px solid transparent;
+  background: #fff;
+}
+main #features-user-profile {
+  height: 150px;
+  border: 1px solid transparent;
+  padding: 1rem;
+  position: relative;
+}
+main #features-user-profile::after {
+  content: "";
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50%;
+  border-bottom: 3px solid #000;
+}
+main #features-user-profile div {
+  height: inherit;
+  display: flex;
+  /* position: absolute; */
+  border-bottom: 2px solid #a18aff;
+  right: 70%;
+  bottom: 0;
+}
+main #features-user-profile div #img {
+  border: 1px solid transparent;
+}
+main #features-user-profile div #img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+main #features-user-profile div #user-descp {
+  /* @include border(red); */
+  padding: 1rem;
+  color: #717082;
+  display: flex;
+  flex-direction: column;
+}
+main #features-user-profile div #user-descp p {
+  color: #a18aff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

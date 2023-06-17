@@ -13,7 +13,6 @@
 </head>
 <body>
     <main>
-
         <!-- Profile and clickables -->
         <section id="features">
             <i class="fa-regular fa-calendar" style="color: #ca8bfe;"></i>

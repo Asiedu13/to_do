@@ -146,6 +146,8 @@ main #display {
   /* background: #fff; */
   border: 3px solid #fff;
   color: #fff;
+  border: 1px solid transparent;
+  /* Task display */
 }
 main #display header {
   height: 150px;
@@ -168,7 +170,6 @@ main #display #task_input {
   height: 100px;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
 }
 main #display #task_input div {
@@ -179,10 +180,10 @@ main #display #task_input div {
   margin-left: 100px;
   align-items: center;
   padding: 0.2rem 2rem;
-  width: 800px;
+  width: 80%;
 }
 main #display #task_input div input {
-  width: 500px;
+  width: 80%;
   height: 60px;
   font-size: 1.2rem;
   border: none;
@@ -192,6 +193,46 @@ main #display #task_input div input {
 }
 main #display #task_input div input::placeholder {
   color: #dbdbdb;
+}
+main #display #task_display {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #717082;
+}
+main #display #task_display .task_item {
+  width: 70%;
+  height: 60px;
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+main #display #task_display .task_item #defining {
+  border: 1px solid transparent;
+  display: flex;
+}
+main #display #task_display .task_item #defining p {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-left: 20px;
+}
+main #display #task_display .task_item #completion {
+  border: 1px solid transparent;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  font-weight: 900;
+  align-items: center;
+}
+main #display #task_display .task_item #completion svg {
+  width: 100px;
+  height: 30px;
+  fill: #a18aff;
 }
 
 /*# sourceMappingURL=main.css.map */
